@@ -24,6 +24,7 @@ class EditViewController: UIViewController {
     @IBOutlet weak var lblWay: UILabel!
     @IBOutlet weak var txMessage: UITextField!
     @IBOutlet weak var swlsOn: UISwitch!
+    @IBOutlet weak var btnZoom: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,11 @@ class EditViewController: UIViewController {
         lblWay.text = textWayValue
         txMessage.text = textMessage
         swlsOn.isOn = isOn
+        if isZoomIn {
+            btnZoom.setTitle("확대", for: .normal)
+        } else {
+            btnZoom.setTitle("축소", for:  .normal)
+        }
     }
     
     @IBAction func btnDone(_ sender: UIButton) {
@@ -51,12 +57,11 @@ class EditViewController: UIViewController {
     }
     
     @IBAction func actZoomInOut(_ sender: UIButton) {
+      // true 확대 false = 축소
         if isZoomIn {
             sender.setTitle("축소", for: .normal)
-            isZoomIn = true
         } else {
             sender.setTitle("확대", for: .normal)
-            isZoomIn = false
         }
     }
     /*

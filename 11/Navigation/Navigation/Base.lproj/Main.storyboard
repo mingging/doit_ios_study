@@ -141,6 +141,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="수정화면" id="zKK-ki-S8A"/>
                     <connections>
+                        <outlet property="btnZoom" destination="fRY-G3-IfM" id="DT0-ts-MX3"/>
                         <outlet property="lblWay" destination="Ayv-cm-FyK" id="ZRQ-NQ-8Yz"/>
                         <outlet property="swlsOn" destination="bQj-xU-ggS" id="8VO-gZ-yqQ"/>
                         <outlet property="txMessage" destination="00A-lM-dCK" id="doq-Ed-uHn"/>

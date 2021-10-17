@@ -56,16 +56,18 @@ class ViewController: UIViewController, EditDelegate {
     func didImageZoomDone(_ controller: EditViewController, isZoomIn: Bool) {
         let scale: CGFloat = 2.0
         var newWidth: CGFloat, newHeight: CGFloat
-        if isZoomIn { // 현재 상태가 '확대'일 때 (즉, isZoom 변수 값이 true일 때)
+        // true = 확대, false = 축소
+        if !isZoomIn { // 현재 상태가 '확대'일 때 (즉, isZoom 변수 값이 true일 때)
                 // 이미지 프레임의 가로, 세로 크기에 scale 값을 나누어 할당
                 newWidth = imgView.frame.width / scale
                 newHeight = imgView.frame.height / scale
-                self.isZoomIn = false
+            self.isZoomIn = true
             } else { // 현재 상태가 '축소' 일 때 (즉, isZoom 변수 값이 false일 때)
                 // 이미지 프레임의 가로, 세로 크기에 scale 값을 곱하여 할당
                 newWidth = imgView.frame.width * scale
                 newHeight = imgView.frame.height * scale
-                self.isZoomIn = true
+                self.isZoomIn = false
+                
         }
         imgView.frame.size = CGSize(width: newWidth, height: newHeight)
 //        self.isZoomIn = !self.isZoomIn

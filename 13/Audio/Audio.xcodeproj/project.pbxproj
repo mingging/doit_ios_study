@@ -13,6 +13,7 @@
 		39ED7F212732E45000FA6FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39ED7F1F2732E45000FA6FEB /* Main.storyboard */; };
 		39ED7F232732E45300FA6FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39ED7F222732E45300FA6FEB /* Assets.xcassets */; };
 		39ED7F262732E45300FA6FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39ED7F242732E45300FA6FEB /* LaunchScreen.storyboard */; };
+		39ED7F2E2732EC3500FA6FEB /* wheein_Easy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39ED7F2D2732EC3500FA6FEB /* wheein_Easy.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		39ED7F222732E45300FA6FEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39ED7F252732E45300FA6FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39ED7F272732E45300FA6FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39ED7F2D2732EC3500FA6FEB /* wheein_Easy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheein_Easy.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		39ED7F182732E45000FA6FEB /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				39ED7F2D2732EC3500FA6FEB /* wheein_Easy.mp3 */,
 				39ED7F192732E45000FA6FEB /* AppDelegate.swift */,
 				39ED7F1B2732E45000FA6FEB /* SceneDelegate.swift */,
 				39ED7F1D2732E45000FA6FEB /* ViewController.swift */,
@@ -126,6 +129,7 @@
 			files = (
 				39ED7F262732E45300FA6FEB /* LaunchScreen.storyboard in Resources */,
 				39ED7F232732E45300FA6FEB /* Assets.xcassets in Resources */,
+				39ED7F2E2732EC3500FA6FEB /* wheein_Easy.mp3 in Resources */,
 				39ED7F212732E45000FA6FEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
